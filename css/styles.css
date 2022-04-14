@@ -1,0 +1,200 @@
+:root {
+    --sercondary-text-color: #757575;
+    --main-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    background-color: var(--primary-white-color);
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+ }
+
+/* ------------------------------------HEADER--------------------------------- */
+
+.header-logo-part{
+    color: #000000;
+}
+
+.header-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.header-link-cont{
+    color: var(--sercondary-text-color);
+}
+
+.header-link:hover, 
+.header-link-cont:hover, 
+.header-link:focus, 
+.header-link-cont:focus, 
+.current, 
+.logo:focus, 
+.link-footer:focus, 
+.link-footer:hover {
+    color: var(--accent-color);
+}  
+    
+
+/* ------------------------------------HERO------------------------- */
+
+.hero {
+    background: #2F303A;
+}
+.hero-tittle { 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    font-family: inherit;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* --------------------------------------ADVANTAGE-------------------------- */
+
+.advantage-heading {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.advantage-desc {
+    line-height: 1.71;
+    color: var(--sercondary-text-color);
+}
+
+/* --------------------------------------ABOUT------------------------ */
+/* -------------------------------------TEAM------------------------------ */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--sercondary-text-color);
+}
+
+/* --------------------------------------FOOTER----------------------------- */
+.footer {
+    background: #2F303A;
+}
+
+.footer-logo-part{
+    color: var(--primary-white-color);
+}
+
+.footer-link{
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.footer-addr {
+    font-style: normal;
+    color: var(--primary-white-color);
+}
+
+.link-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----------------------------------FILTER PORTFOLIO-------------------- */
+
+.filter-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background: #F5F4FA;
+    color: var(--main-text-color);
+    font-family: inherit;
+    cursor: pointer;
+}
+.filter-btn.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    
+}
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
+/* -----------------------------------PROJECTS PORTFOLIO------------------ */
+
+.project-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+.project-type {
+    line-height: 1.87px;
+    color: var(--sercondary-text-color);
+}
