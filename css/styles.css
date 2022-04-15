@@ -29,6 +29,12 @@ ol {
     padding: 0;
 }
 
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -49,6 +55,7 @@ ol {
 }
 
 .logo{
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: var(--accent-color);
@@ -74,10 +81,10 @@ ol {
     text-align: center;
  }
 
- .about-image,
- .team-image,
- .project-img {
+ .img {
      display: block;
+     max-width: 100%;
+     height: auto;
  }
 
 /* ------------------------------------HEADER--------------------------------- */
@@ -94,12 +101,10 @@ ol {
 .header .container{
     display: flex;
     align-items: center;
-    padding: 0;
 }
 
 .header-connect{
     margin-left: auto;
-    
 }
 
 .header-logo-part{
@@ -148,7 +153,7 @@ ol {
     padding-bottom: 200px;
 
     text-align: center;
-    background: #2F303A;
+    background-color: #2F303A;
 }
 
 .hero-tittle { 
@@ -172,8 +177,6 @@ ol {
     font-size: 16px;
     line-height: 1.87;
     display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     font-family: inherit;
@@ -185,8 +188,10 @@ ol {
     border-radius: 4px;
     display: inline-block;
     min-width: 200px;
-    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 4px;
+    border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -222,7 +227,7 @@ ol {
 /* --------------------------------------ABOUT------------------------ */
 
 .about{
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -232,6 +237,7 @@ ol {
 
 .about-list{
     display: flex;
+    align-items: center;
 }
 
 .about-item:not(:last-child) {
@@ -251,6 +257,7 @@ ol {
 
 .team-list{
     display: flex;
+    align-items: center;
 }
 
 .team-item:not(:last-child) {
@@ -284,10 +291,15 @@ ol {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #2F303A;
+    background-color: #2F303A;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
 }
 
 .footer-logo-part{
+    display: inline-block;
     color: var(--primary-white-color);
 }
 
@@ -296,15 +308,17 @@ ol {
     line-height: 1.71;
 }
 
+.footer-addres {
+    margin-bottom: 9px;
+}
+
 .footer-addr {
-    margin-top: 20px;
     font-style: normal;
     color: var(--primary-white-color);
 }
 
-.footer-mail{
+.footer-mail {
     margin-bottom: 9px;
-    margin-top: 9px;
 }
 
 .link-footer {
@@ -320,7 +334,6 @@ ol {
     display: flex;
     margin-bottom: 34px;
     justify-content: center;
-
 }
 
 .filter-item:not(:last-child){
@@ -377,13 +390,12 @@ ol {
 
 .project-name {
     margin-bottom: 4px;
-
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
 }
+
 .project-type {
-    line-height: 1.87px;
     color: var(--sercondary-text-color);
 }
