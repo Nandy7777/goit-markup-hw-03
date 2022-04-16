@@ -206,6 +206,10 @@ img {
     display: flex;
 }
 
+.advantage-item {
+    width: 270px;
+}
+
 .advantage-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -317,7 +321,7 @@ img {
     color: var(--primary-white-color);
 }
 
-.footer-mail {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
