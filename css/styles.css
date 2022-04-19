@@ -268,16 +268,18 @@ img {
     margin-right: 30px;
 }
 
+.team-image {
+    margin-bottom: 30px;
+}
+
 .team-container{
-    padding: 30px 59px;
+    padding: 0px 32px 30px 32px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-member {
     margin-bottom: 10px;
-
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -289,6 +291,40 @@ img {
     line-height: 1.19;
     text-align: center;
     color: var(--sercondary-text-color);
+    margin-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center; 
+}
+
+.team-soc-item +.team-soc-item{
+    margin-left: 10px;
+}
+
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-item-icon {
+    fill: rgba(175, 177, 184, 1);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+
+.team-soc-link:hover .team-item-icon,
+.team-soc-link:focus .team-item-icon {
+    fill: var(--primary-white-color);
 }
 
 /* --------------------------------------FOOTER----------------------------- */
@@ -297,6 +333,11 @@ img {
     padding-bottom: 60px;
     background-color: #2F303A;
 }
+
+.footer-conainetr {
+    display: flex;
+}
+
 
 .footer-logo{
     margin-bottom: 20px;
@@ -327,6 +368,46 @@ img {
 
 .link-footer {
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------------------FOOTER CONNECT-------------------------- */
+.connect-title {
+    font-size: 14px;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+}
+
+.connect-soc-list {
+    display: flex;
+   
+}
+
+.coonect-soc-item +.connect-soc-item{
+    margin-left: 10px;
+}
+
+.connect-soc-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-item-icon {
+    fill: var(--primary-white-color);
+}
+
+.connect-soc-link:hover,
+.connect-soc-link:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+
+.connect-soc-link:hover .connect-item-icon,
+.connect-soc-link:focus .connect-item-icon {
+    fill: var(--primary-white-color);
 }
 
 /* -----------------------------------FILTER PORTFOLIO-------------------- */
