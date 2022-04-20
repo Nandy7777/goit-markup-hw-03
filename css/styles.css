@@ -337,7 +337,9 @@ img {
 .footer-conainetr {
     display: flex;
 }
-
+.footer-first {
+    padding-right: 70px;
+}
 
 .footer-logo{
     margin-bottom: 20px;
@@ -371,19 +373,20 @@ img {
 }
 
 /* ---------------------------------FOOTER CONNECT-------------------------- */
+
+.connect {
+    padding-top: 12px;
+}
+
 .connect-title {
     font-size: 14px;
     color: var(--primary-white-color);
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .connect-soc-list {
     display: flex;
-   
-}
-
-.coonect-soc-item +.connect-soc-item{
-    margin-left: 10px;
 }
 
 .connect-soc-link {
@@ -392,10 +395,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
 .connect-item-icon {
     fill: var(--primary-white-color);
+}
+
+.connect-soc-item +.connect-soc-item {
+    margin-left: 10px;
 }
 
 .connect-soc-link:hover,
